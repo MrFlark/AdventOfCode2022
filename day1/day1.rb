@@ -18,8 +18,12 @@ File.foreach("./input.txt") {
 
             # append parsed calorie int to existing elf inventory
             calorieSums[latestIndex] += Integer(line)
-            
+
         end
 }
 
+# part 1
 puts calorieSums.max()
+
+# part 2
+puts calorieSums.sort().last(3).sum()
